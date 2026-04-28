@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="16.1.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.25" />
+      <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="8.0.24" />
+      <PackageReference Include="Minio" Version="7.0.0" />
+      <PackageReference Include="Serilog" Version="4.3.1" />
+      <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Diplom.Client\Diplom.Client.csproj" />
+      <ProjectReference Include="..\Diplom.Data\Diplom.Data.csproj" />
+    </ItemGroup>
+
+</Project>
